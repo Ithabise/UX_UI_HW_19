@@ -6,6 +6,8 @@
 <title>Kristina Lee UX Design Portfolio</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 <!-- Hotjar Tracking Code for my site -->
 <script>
   (function(h,o,t,j,a,r){
@@ -19,37 +21,41 @@
 </script>
 <nav class="topnav" id="myNav">
   <div class="topnav, logo">
-    <a href="#home" class="navBar" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="navBar" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="navBar" onclick="closeNav()">About</a>
-    <a href="#contact" class="navBar" onclick="closeNav()">Contact</a>
+    <a href="#home" class="navBar">Home</a>
+    <a href="#portfolio" class="navBar">Portfolio</a>
+    <a href="#about" class="navBar">About</a>
+    <a href="#contact" class="navBar">Contact</a>
   </div>
-  <img src="/My_First_Repo/img/Logo.png" alt="logo" width="40px" height="10px" style="float:left"></img>
+  <class="navbar-brand" href="/">
+    <div class="logo-image">
+          <img src="/img/Logo.png" class="img-fluid">
+    </div>
 </nav>
 </head>
 
 <body>
+  <div>
   <header class="header" id="home">
-    <h1><b>Kristina Lee</b></h1>
-    <p> UX Design</p>
   </header>
+  </div> 
 
-  <img src="https://img1.wsimg.com/isteam/ip/2421b915-e390-447f-88b5-dc8a72f56404/blob-0019.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/fx-gs/rs=w:1023,h:1364" class=" image-profile" alt="my picture"></img>
-  
-
-    <div class="nav" id="about">
-      <h2>About</h2>
+    <div class="about" id="about">
+        <img src="https://img1.wsimg.com/isteam/ip/2421b915-e390-447f-88b5-dc8a72f56404/blob-0019.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/fx-gs/rs=w:1023,h:1364" class=" image-profile" alt="my picture"></img>
+        <h1> Hi, I'm Kristina Lee</h1>
+        <h2>About</h2>
       <hr class="opacity">
       <p><strong>Behind the Design: Simplicity.</strong></p>
       <p>I'm Kristina Lee. Designing an experience is about innovating interactions. My philosophy is to create connections between things, technologies and people. The result is a designed interaction of intuitive simplicity.</p>
-      <br>
+    </div>
+
+    <div class="nav">
       <h3>My Skills</h3>
+      <hr class="opacity">
       <p>User Research</p>
       <p>Figma</p>
       <p>Adobe XD</p>
       <p>InVision</p>
       <p>Bootstrap</p>
-      </div>
       </div>
     </div>
 
@@ -63,7 +69,7 @@
     <section class="cards-wrapper">
       <div class="card-grid-space">
         <div class="num">01</div>
-        <a class="card" src="/My_First_Repo/img/iPhone 12 Pro Tulip.png">
+        <a class="card" src="/img/iPhone 12 Pro Tulip.png">
           <div>
             <h1>Tulip Mobile App</h1>
             <p>UX design of a conceptual community learning marketplace app.</p>
@@ -76,7 +82,7 @@
       </div>
       <div class="card-grid-space">
         <div class="num">02</div>
-        <a class="card" src="/My_First_Repo/img/Surface Studio Mockup.png">
+        <a class="card2" src="/img/Surface Studio Mockup.png">
           <div>
             <h1>Website Redesign</h1>
             <p>Redesign of the NSA.Gov website, usability and branding.</p>
@@ -89,7 +95,7 @@
       </div>
       <div class="card-grid-space">
         <div class="num">03</div>
-        <a class="card" src="/My_First_Repo/img/Tablet and Phone.png">
+        <a class="card3" src="/img/Tablet and Phone.png">
           <div>
             <h1>Non-profit Website Design</h1>
             <p>Uasbility research and design of United Angels Foundation website.</p>
@@ -101,6 +107,9 @@
         </a>
       </div>
     </section>
+    <button class="button" type="submit">
+      <a>Read Case Studies </a>
+    </button>
       </div>
     </div>
   </body>
@@ -132,6 +141,11 @@
       </form>
     </div>  
 
+    <div>
+    <footer class="footer">
+      <h5> Kristina Lee UX Design </h5>
+    </footer>
+    </div>
   </div>
  
   <script>
@@ -147,6 +161,12 @@
   function closeBar(){
     document.getElementById("myNav").style.display = "none";
   }
+
+  $('a').click(function() {
+window.open('https://uxfol.io/p/kristinaleeuxdesign/unitedangels');
+return false;
+});
+ 
   </script>
   
   </body>
